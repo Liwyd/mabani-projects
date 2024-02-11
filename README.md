@@ -4,6 +4,6 @@ teacher : DRUSH najafi
 
 Number of current projects : 8 
 
-special thanks to @arha83
+special thanks to [@arha83](https://github.com/arha83)
 
 #
