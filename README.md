@@ -1,9 +1,9 @@
 # پروژه های درس مبانی کامپیوتر و نرم افزار 
-#### توضیحات :
-استاد درس : داریوش نجفی 
+#### details :
+teacher : DRUSH najafi 
 
-تعداد پروژه های فعلی : ۸
+Number of current projects : 8 
 
-
+special thanks to @arha83
 
 #
