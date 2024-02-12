@@ -78,5 +78,62 @@ int main()
 ```
 #### زیگزاگ
 ```cpp
-E
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+using namespace std;
+int main(){
+	int **s,n;
+	cout<<"Please enter a number: ";
+	cin>>n;
+	s= new int*[n];
+	for(int i=0;i<n;i++){
+		s[i]=new int[n];
+	}
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++)
+		s[i][j]=0;
+	}
+	int i=1,r=0,c=0;
+    s[r][c]=1;
+    i++;
+    while(i<=n*n){
+	if(c+1<n)
+	c++;
+	else
+		r++;
+	s[r][c]=i;
+	i++;
+	if(i>n*n)
+		break;
+	while(r<n-1 && c>0){
+		r++;
+		c--;
+		s[r][c]=i;
+		i++;
+		if(i>n*n)
+	break;}
+    if(r+1<n)
+		r++;
+	else
+		c++;
+	s[r][c]=i;
+	i++;
+	if(i>n*n)
+		break;
+	while(r>0 && c<n-1){
+		r--;
+		c++;
+		s[r][c]=i;
+		i++;
+		if(i>n*n)
+	break;}
+   }
+    for(r=0;r<n;r++){
+	    for(c=0;c<n;c++)
+		cout<<setw(3)<<s[r][c];
+        cout<<"\n";}
+    getch();
+return 0;
+}
 ```
